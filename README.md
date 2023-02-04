@@ -1,6 +1,6 @@
 # mi cv (cv-quasar)
 
-mi cv
+mi cv version 2023
 
 ## Install the dependencies
 ```bash
