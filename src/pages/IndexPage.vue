@@ -4,15 +4,22 @@
     <!-- vista video -->
     
     <div class="col-md col-12 video gt-md animate__animated animate__fadeIn animate__slower" v-if="hero">
-      <q-parallax :height="500" >
+      <!-- <q-parallax :height="500" >
         <template v-slot:media>
           <video width="300" height="900" autoplay loop muted class="mi-video">
             <source type="video/mp4" :src="herovideo">
           </video>
         </template>
-        <h1 class="major-font text-white">Portafolio</h1>
+        <h1 class="major-font text-white"></h1>
       
-      </q-parallax>
+      </q-parallax> -->
+
+      <!-- <video width="600" height="400" controls autoplay loop>
+  <source :src="herovideo" type="video/mp4">
+Your browser does not support the video tag.
+</video> -->
+
+<video :src="herovideo" loop autoplay muted></video>
     </div>
 
     <div class=" col-md col-12 video lt-lg animate__animated animate__fadeIn animate__slower">
@@ -51,7 +58,7 @@ const props = defineProps({
   }
 })
 
-const herovideo = ref('video.mp4')
+const herovideo = ref('video-marketing.mp4')
 const herovideo2 = ref('hero2.mp4')
 
 
@@ -106,6 +113,9 @@ const showWorks =()=>{
 </script>
 
 <style>
+video{
+  max-width: 800px;
+}
 .my-card{
   width: 100%;
   max-width: 250px;
