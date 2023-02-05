@@ -41,7 +41,7 @@
               
             >
               <q-tab name="home" label="Home" @click="goHome"/>
-              <q-tab name="aboutme" label="Acerca de mi" @click="showAbout"/>
+              <q-tab name="aboutme" label="Acerca de mi" @click="goAbout"/>
               <q-tab name="contacto" label="Portafolio" @click="goContact" />
               <q-tab name="skills" label="Habilidades" @click="goSkills" />
               <q-tab name="works" label="Currículo" @click="goWorks" />
@@ -95,13 +95,17 @@ const toggleLeftDrawer = () =>{
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
 
-const showAbout =()=>{
-  var s = document.getElementById("sonido")
+const goAbout =()=>{
+  /* var s = document.getElementById("sonido")
   s.play();
   setTimeout(()=>{
     about.value = true
     router.push('/')
-  },2500)
+  },2500) */
+
+  setTimeout(()=>{
+    router.push('/about')
+  },1000)
 }
 
 const goHome=()=>{

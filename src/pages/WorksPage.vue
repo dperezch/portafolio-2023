@@ -1,5 +1,5 @@
 <template>
-    <div class="row wrap justify-evenly gt-md animate__animated animate__fadeIn animate__slow" >
+    <div class="container-cv gt-md animate__animated animate__fadeIn animate__slow" >
         <q-card class="work" :onmouseenter="mostrar" :onmouseleave="ocultar">  <!-- :onmouseenter="entrar" :onmouseleave="salir" -->
             <q-card-section  class="text-white" id="textowork">  <!-- v-if="mantener" -->
                 <p class="text-weight-bold">Empresa: Energiza</p>
@@ -11,6 +11,14 @@
             </q-card-section>
         </q-card>
 
+        <div class="curriculum q-pt-md q-mt-xl">
+            <p class="montserrat-font text-weight-bold">Descarga mi curriculum: </p>
+            <a href="CV-DavidPerezCh.pdf" download class="q-mx-lg">
+                <q-avatar square size="40px" >
+                    <img src="cv.svg">
+                </q-avatar>
+            </a>
+        </div>
     </div>
 
     <div class="row wrap justify-evenly q-mb-md lt-lg animate__animated animate__fadeIn animate__slow">
@@ -25,6 +33,14 @@
                 <p>katherinemartineau@sustantiva.cl</p>
             </q-card-section>
         </q-card>
+        <div class="curriculum q-pt-md q-mt-xl">
+            <p class="montserrat-font text-weight-bold">Descarga mi curriculum: </p>
+            <a href="CV-DavidPerezCh.pdf" download class="q-mx-lg">
+                <q-avatar square size="40px">
+                    <img src="cv.svg">
+                </q-avatar>
+            </a>
+        </div>
     </div>
 
 
@@ -72,6 +88,13 @@ function ocultar(){
     display: none;
 }
 
+.curriculum{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .work:hover{
     transform: scale(1.2); 
@@ -82,6 +105,12 @@ function ocultar(){
 .work2{
     width: 100%;
     max-width: 300px;
+}
+
+.container-cv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 </style>

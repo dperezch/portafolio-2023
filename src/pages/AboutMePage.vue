@@ -1,5 +1,5 @@
 <template>
-    <div class="row wrap justify-evenly">
+    <div class="row wrap justify-evenly animate__animated animate__fadeIn animate__slow">
         <q-card class="acerca">
         <img src="perfil.jpg">
         <q-card-section>
