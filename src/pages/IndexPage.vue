@@ -19,7 +19,11 @@
 Your browser does not support the video tag.
 </video> -->
 
-<video :src="herovideo" loop autoplay muted></video>
+      <video :src="herovideo" loop autoplay muted></video>
+
+      <Contact
+        class="q-mt-md" 
+      />
     </div>
 
     <div class=" col-md col-12 video lt-lg animate__animated animate__fadeIn animate__slower">
@@ -31,6 +35,10 @@ Your browser does not support the video tag.
         </template>
         <h4 class="major-font text-white text-weight-bold">Portafolio</h4>
       </q-parallax>
+
+      <Contact
+        class="q-mt-md" 
+      />
 
     </div>
     

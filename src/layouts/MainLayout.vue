@@ -42,9 +42,10 @@
             >
               <q-tab name="home" label="Home" @click="goHome"/>
               <q-tab name="aboutme" label="Acerca de mi" @click="showAbout"/>
+              <q-tab name="contacto" label="Portafolio" @click="goContact" />
               <q-tab name="skills" label="Habilidades" @click="goSkills" />
               <q-tab name="works" label="Currículo" @click="goWorks" />
-              <q-tab name="contacto" label="Contacto" @click="goContact" />
+              
             </q-tabs>
      
         </div>

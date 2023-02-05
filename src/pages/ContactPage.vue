@@ -1,11 +1,13 @@
 <template>
 
-    <Contact class="animate__animated animate__fadeIn animate__slow" />
+    
+    <Portafolio class="animate__animated animate__fadeIn animate__slow"/>
     
 </template>
 
 <script setup>
-import Contact from '../components/Contact.vue'
+import Portafolio from 'src/components/Portafolio.vue';
+
 </script>
 
 <style scoped>

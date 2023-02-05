@@ -1,7 +1,7 @@
 <template>
    
     <div class="row wrap flex justify-center items-center">
-        <q-item clickable class="linkedin" href="https://www.linkedin.com/in/dperezch/" target="_blank">
+        <q-item clickable class="linkedin" href="https://www.linkedin.com/in/dperezch/" target="_blank" :active="active" >
             <q-item-section top avatar>
                 <q-icon name="bi-linkedin" size="4em" color="blue" />
             </q-item-section>
@@ -24,7 +24,10 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 
+
+const active= ref(false)
 </script>
 
 <style scoped>
@@ -36,5 +39,6 @@
 .linkedin:hover, .email:hover, .whatsap:hover{
     transform: scale(1.2); 
 }
+
 
 </style>

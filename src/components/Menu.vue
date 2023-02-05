@@ -8,6 +8,10 @@
         <q-item-section>About me</q-item-section>
     </q-item>
 
+    <q-item clickable v-ripple to="/contact">
+        <q-item-section>Portafolio</q-item-section>
+    </q-item>
+
     <q-item clickable v-ripple to="/skills">
         <q-item-section>Skills</q-item-section>
     </q-item>
@@ -16,9 +20,7 @@
         <q-item-section>Curriculum</q-item-section>
     </q-item>
 
-    <q-item clickable v-ripple to="/contact">
-        <q-item-section>Contact</q-item-section>
-    </q-item>
+    
 
     
 </template>

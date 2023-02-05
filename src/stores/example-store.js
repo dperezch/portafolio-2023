@@ -34,9 +34,7 @@ export const useSkillStore = defineStore('skillStore', {
         letra: 'Q',
         nombre: 'QuasarJS 2 y 3 ',
         label: 'Framework basado en VueJS'
-      }
-    ],
-    devTools: [
+      },
       {
         letra: 'B',
         nombre: 'Bootstrap 5',
@@ -47,6 +45,20 @@ export const useSkillStore = defineStore('skillStore', {
         nombre: 'AnimateCSS - AnimeJS',
         label: 'Bibliotecas de animaciones CSS'
       },
+    ],
+    devTools: [
+      
+      {
+        letra: 'V',
+        nombre: 'Visual Studio Code',
+        
+      },
+      {
+        letra: 'A',
+        nombre: 'Android Studio',
+        
+      },
+
 
     ],
     backend: [
