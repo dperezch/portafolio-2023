@@ -89,7 +89,7 @@ import Skills from 'src/components/Skills.vue';
 import Frame from 'src/components/Frame.vue';
 import Tools from 'src/components/Tools.vue';
 import Backend from 'src/components/Backend.vue';
-import BackTools from 'src/components/backTools.vue';
+import BackTools from 'src/components/BackTools.vue';
 import Design from '../components/DesignTools.vue';
 
 
