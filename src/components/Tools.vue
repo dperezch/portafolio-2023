@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import { useSkillStore } from 'src/stores/example-store';
+import { useSkillStore } from 'src/stores/skillStore';
 
 const skillStore = useSkillStore()
 

@@ -105,31 +105,31 @@ const goAbout =()=>{
 
   setTimeout(()=>{
     router.push('/about')
-  },1000)
+  },700)
 }
 
 const goHome=()=>{
   setTimeout(()=>{
     router.push('/')
-  },1000)
+  },700)
 }
 
 const goSkills = () =>{
   setTimeout(()=>{
     router.push('/skills')
-  },1000)
+  },700)
 }
 
 const goContact = () =>{
   setTimeout(()=>{
     router.push('/contact')
-  },1000)
+  },700)
 }
 
 const goWorks = () =>{
   setTimeout(()=>{
     router.push('/works')
-  },1000)
+  },700)
 }
 
 </script>
