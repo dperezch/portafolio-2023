@@ -13,7 +13,7 @@
 
         <div class="curriculum q-pt-md q-mt-xl">
             <p class="montserrat-font text-weight-bold">Descarga mi curriculum: </p>
-            <a href="CV-DavidPerezCh.pdf" download class="q-mx-lg">
+            <a href="CV_WebDev_David_Perez.pdf" download class="q-mx-lg">
                 <q-avatar square size="40px" >
                     <img src="cv.svg">
                 </q-avatar>
@@ -35,7 +35,7 @@
         </q-card>
         <div class="curriculum q-pt-md q-mt-xl">
             <p class="montserrat-font text-weight-bold">Descarga mi curriculum: </p>
-            <a href="CV-DavidPerezCh.pdf" download class="q-mx-lg">
+            <a href="CV_WebDev_David_Perez.pdf" download class="q-mx-lg">
                 <q-avatar square size="40px">
                     <img src="cv.svg">
                 </q-avatar>

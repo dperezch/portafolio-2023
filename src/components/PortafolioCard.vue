@@ -1,7 +1,7 @@
 <template>
     <!-- *** CARD VERSION ESCRITORIO -->
     <div class="contenedor-portafolio gt-xs">
-        <q-card class="my-card-portafolio q-my-md animate__animated animate__fadeIn animate__slow"
+        <q-card v-if="card" class="my-card-portafolio q-my-md animate__animated animate__fadeIn animate__slow"
             v-for="card, index in portafolioStore.cards" :key="index">
             <q-card-section horizontal>
                 <q-card-section>
@@ -46,6 +46,10 @@
             </q-card-section>
         </q-card>
 
+
+        <!-- esqueleto -->
+        <PortafolioCardSkeleton v-if="cardSket" />
+
     </div>
 
     <!-- *** CARD VERSION MOBILE -->
@@ -75,27 +79,27 @@
                 </div>
                 <div class="row">
                     <q-item clickable class="row flex items-center justify-center" :href="card.github" target="_blank">
-                    <q-avatar size="40px">
-                        <img src="github_icon.png">
-                    </q-avatar>
-                    <p class="text-subtitle2 q-mt-md">Github</p>
-                </q-item>
-                <q-item v-if="card.playstore" clickable class="row flex items-center justify-center" :href="card.playstore"
-                    target="_blank">
-                    <q-avatar square size="30px">
-                        <img src="playstore_icon.png">
-                    </q-avatar>
-                    <p class="text-subtitle2 q-mt-md q-mx-xs">Play Store</p>
-                </q-item>
-                <q-item v-if="card.netlify" clickable class="row flex items-center justify-center" :href="card.netlify"
-                    target="_blank">
-                    <q-avatar square size="30px">
-                        <img src="netlify_icon.png">
-                    </q-avatar>
-                    <p class="text-subtitle2 q-mt-md q-mx-xs">Link</p>
-                </q-item>
+                        <q-avatar size="40px">
+                            <img src="github_icon.png">
+                        </q-avatar>
+                        <p class="text-subtitle2 q-mt-md">Github</p>
+                    </q-item>
+                    <q-item v-if="card.playstore" clickable class="row flex items-center justify-center"
+                        :href="card.playstore" target="_blank">
+                        <q-avatar square size="30px">
+                            <img src="playstore_icon.png">
+                        </q-avatar>
+                        <p class="text-subtitle2 q-mt-md q-mx-xs">Play Store</p>
+                    </q-item>
+                    <q-item v-if="card.netlify" clickable class="row flex items-center justify-center" :href="card.netlify"
+                        target="_blank">
+                        <q-avatar square size="30px">
+                            <img src="netlify_icon.png">
+                        </q-avatar>
+                        <p class="text-subtitle2 q-mt-md q-mx-xs">Link</p>
+                    </q-item>
                 </div>
-                
+
             </q-card-section>
         </q-card>
 
@@ -104,8 +108,20 @@
 
 <script setup>
 import { usePortafolioStore } from 'src/stores/portafolio';
+import PortafolioCardSkeleton from './PortafolioCardSkeleton.vue';
+import { onMounted, ref } from 'vue';
 
 const portafolioStore = usePortafolioStore()
+
+const card = ref(false)
+const cardSket = ref(true)
+
+onMounted(() => {
+    setTimeout(() => {
+        cardSket.value = false
+        card.value = true
+    }, 2000);
+})
 
 </script>
 
