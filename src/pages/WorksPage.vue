@@ -12,19 +12,22 @@
         </q-card>
 
         <div class="curriculum q-pt-md q-mt-xl">
-            <p class="montserrat-font text-weight-bold">Descarga mi curriculum: </p>
+            <p class="montserrat-font text-weight-bold q-mt-md">Descarga mi curriculum: </p>
             <a href="CV_WebDev_David_Perez.pdf" download class="q-mx-lg">
-                <q-avatar square size="40px" >
-                    <img src="cv.svg">
+                <q-avatar square size="60px">
+                   <!-- <img src="cv.svg"> -->
+                    <CvSvg  :colorFill="$q.dark.isActive? 'white':'black'" />
                 </q-avatar>
             </a>
         </div>
     </div>
 
+    <!-- MOBILE -->
+
     <div class="row wrap justify-evenly q-mb-md lt-lg animate__animated animate__fadeIn animate__slow">
         <q-card class="work2">
             <img src="card.jpg">
-            <q-card-section class="text-black">
+            <q-card-section :class="$q.dark.isActive? 'text-white':'text-black'">
                 <p class="text-weight-bold">Empresa: Energiza</p>
                 <p>Cargo: Desarrollador aplicaciones Web/Android</p>
                 <p>Encargado del desarrollo de una aplicación de cursos autoinstruccional offline para plataforma android </p>
@@ -34,14 +37,22 @@
             </q-card-section>
         </q-card>
         <div class="curriculum q-pt-md q-mt-xl">
-            <p class="montserrat-font text-weight-bold">Descarga mi curriculum: </p>
+            <p class="montserrat-font text-weight-bold q-mt-md">Descarga mi curriculum: </p>
             <a href="CV_WebDev_David_Perez.pdf" download class="q-mx-lg">
-                <q-avatar square size="40px">
-                    <img src="cv.svg">
+                <q-avatar square size="60px">
+                   <!-- <img src="cv.svg"> -->
+                    <CvSvg  :colorFill="$q.dark.isActive? 'white':'black'" />
                 </q-avatar>
             </a>
         </div>
     </div>
+
+    <div class="q-mt-xl">
+        <p class="montserrat-font text-weight-bold">Mis redes sociales: </p>
+        <Contact />
+    </div>
+
+
 
 
 
@@ -49,7 +60,11 @@
 
 <script setup>
 import { onMounted } from 'vue';
+import CvSvg from '../components/CvSvg.vue'
+import { useQuasar } from 'quasar'
+import Contact from 'src/components/Contact.vue';
 
+const $q = useQuasar()
 
 //const src = ref('card.jpg')
 

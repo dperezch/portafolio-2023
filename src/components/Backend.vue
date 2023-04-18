@@ -15,11 +15,11 @@
   
             <q-item-section class="">
               <q-item-label> {{ list.nombre }} </q-item-label>
-              <q-item-label caption lines="5" class="text-black"> {{ list.label }} </q-item-label>
+              <q-item-label caption lines="5" :class="$q.dark.isActive? 'text-white': 'text-black' "> {{ list.label }} </q-item-label>
             </q-item-section>
   
             <q-item-section side>
-              <q-icon name="done_outline" color="black" />
+              <q-icon name="done_outline" :color="$q.dark.isActive? 'white': 'dark' " />
             </q-item-section>
           </q-item>
         </q-intersection>
@@ -29,6 +29,9 @@
   
   <script setup>
   import { useSkillStore } from 'src/stores/skillStore';
+  import { useQuasar } from 'quasar'
+
+  const $q = useQuasar()
   
   const skillStore = useSkillStore()
   
