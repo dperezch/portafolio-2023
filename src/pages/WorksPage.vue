@@ -1,5 +1,5 @@
 <template>
-    <div class="container-cv gt-md animate__animated animate__fadeIn animate__slow" >
+    <div class="container-cv gt-md animate__animated animate__fadeIn animate__slow" id="works"  >
         <q-card class="work" :onmouseenter="mostrar" :onmouseleave="ocultar">  <!-- :onmouseenter="entrar" :onmouseleave="salir" -->
             <q-card-section  class="text-white" id="textowork">  <!-- v-if="mantener" -->
                 <p class="text-weight-bold">Empresa: Energiza</p>

@@ -1,15 +1,41 @@
 <template>
-    <video :src="herovideo" loop autoplay muted></video>
+    <div class="contenedorVideo flex flex-center column q-my-xl q-py-xl">
+        <IndexSkeleton v-if="skeleton" />
+        <video :src="url" loop autoplay muted preload></video>
+    </div>
+    
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
+import IndexSkeleton from './IndexSkeleton.vue';
+const url = ref('')
+const skeleton = ref(true)
 
-const herovideo = ref('video-marketing.mp4')
+onMounted(()=>{
+
+    setTimeout(()=>{
+        fetch('video-marketing.mp4')
+        .then(res=> {
+        if (res.ok) { console.log("HTTP request successful") }
+        else { console.log("HTTP request unsuccessful") }
+        return res
+        })
+        .then(res=> {
+            url.value = res.url
+            skeleton.value = false
+        })
+        .catch(e => console.log(e))
+    },1500)
+    
+})
 </script>
 
 <style>
+.contenedorVideo{
+    height: 650px;
+}
 video {
-    max-width: 800px;
+    max-width: 1000px;
 }
 </style>
