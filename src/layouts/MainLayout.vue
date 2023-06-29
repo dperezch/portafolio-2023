@@ -11,13 +11,14 @@
         <q-toolbar>
           
           <q-toolbar-title 
-            class="major-font q-ml-md"
+            class="montserrat-font q-ml-md text-h5"
             :class="$q.dark.isActive? 'text-white': 'text-black '"
           >
-            Portafolio David Pérez
+            PORTAFOLIO DAVID PÉREZ
           </q-toolbar-title>
-
-          <q-btn flat round dense icon="whatshot" />
+          <q-btn flat round dense icon="fa-brands fa-linkedin-in" :color="!$q.dark.isActive && 'black' " href="https://www.linkedin.com/in/dperezch/" target="_blank"/>
+          <q-btn flat round dense icon="fa-solid fa-envelope" :color="!$q.dark.isActive && 'black' " href="mailto:davarmando@gmail.com" />
+          <q-btn flat round dense icon="fa-brands fa-whatsapp" :color="!$q.dark.isActive && 'black' " href="https://api.whatsapp.com/send?phone=56950627883&text=Hola,%20te%20contacto%20desde%20tu%20portafolio" target="_blank" />
         </q-toolbar>
 
         <div 
@@ -26,10 +27,10 @@
         
           <q-btn-group flat class="">
             <q-btn flat :color="$q.dark.isActive? 'white': 'black'" label="HOME" size="1.2em" href="#"/>
-            <q-btn flat :color="$q.dark.isActive? 'white': 'black'" label="habilidades" size="1.2em" />
+            <q-btn flat :color="$q.dark.isActive? 'white': 'black'" label="habilidades" size="1.2em" href="#skills"/>
             <q-btn flat :color="$q.dark.isActive? 'white': 'black'" label="portafolio" size="1.2em"/>
-            <q-btn flat :color="$q.dark.isActive? 'white': 'black'" label="acerca de mi" size="1.2em"/>
-            <q-btn flat :color="$q.dark.isActive? 'white': 'black'" label="curriculo" size="1.2em" href="#works" />
+            <q-btn  href="#about"  flat :color="$q.dark.isActive? 'white': 'black'" label="acerca de mi" size="1.2em" />
+            <q-btn  flat :color="$q.dark.isActive? 'white': 'black'" label="curriculo" size="1.2em" href="#works" />
           </q-btn-group>
 
         </div>
@@ -57,11 +58,11 @@
       <q-page class="gt-md">
         <IndexPage />
 
-        <AboutMePage />
-
+        <SkillsPage />
+        
         <PortafolioPage />
 
-        <SkillsPage />
+        <AboutMePage />
 
         <WorksPage />
       </q-page>

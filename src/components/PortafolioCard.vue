@@ -1,6 +1,6 @@
 <template>
-    <!-- *** CARD VERSION ESCRITORIO -->
-    <div class="contenedor-portafolio gt-xs">
+    <!-- *** CARD VERSION TABLET -->
+    <div class="contenedor-portafolio md">
         <q-card v-if="card" class="my-card-portafolio q-my-md animate__animated animate__fadeIn animate__slow"
             v-for="card, index in portafolioStore.cards" :key="index">
             <q-card-section horizontal>
@@ -47,13 +47,13 @@
         </q-card>
 
 
-        <!-- esqueleto -->
+        
         <PortafolioCardSkeleton v-if="cardSket" />
 
     </div>
 
     <!-- *** CARD VERSION MOBILE -->
-    <div class="portafolio-mobile lt-sm">
+    <div class="portafolio-mobile lt-md">
 
         <q-card class="my-card-portafolio2 q-my-md animate__animated animate__fadeIn animate__slow"
             v-for="card, index in portafolioStore.cards" :key="index">

@@ -1,15 +1,15 @@
 <template>
 
     <!-- DESKTOP -->
-    <div class="gt-md q-my-xl q-py-xl column">
+    <div class="gt-md q-my-xl q-py-xl flex row" id="about">
 
-        <div>
+        <div class="text-h1 montserrat-font col-5 flex justify-center">
             ABOUT ME
         </div>
 
-        <div class="flex row">
-            <div>
-                <p class="montserrat-font text-justify">
+        <div class="flex row col-7">
+            <div class="col-7">
+                <p class="q-mx-lg montserrat-font text-justify">
                     Hola, me llamo David Pérez, soy chileno, Licenciado en Artes Plásticas de la Universidad de Concepción, me gusta el cine, la música y todo lo relacionado a las 
                     bellas artes, siempre me llamó la atención el mundo del diseño y la programación asi que hice un bootcamp de desarrollo web y con los conocimientos adquiridos 
                     comencé  a implementar mi creatividad en el desarrollo de páginas y aplicaciones web. <br>
@@ -17,8 +17,8 @@
                     seguir adquiriendo mucha más experiencia en el mundo de la programación web.
                 </p>
             </div>
-            <div>
-                <img class="perfil-desktop" src="perfil.jpg">
+            <div class="col-5">
+                <img class="perfil-desktop q-mx-lg" src="perfil.jpg">
             </div>
         </div>
         
