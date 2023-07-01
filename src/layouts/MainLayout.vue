@@ -33,6 +33,20 @@
             <q-btn  flat :color="$q.dark.isActive? 'white': 'black'" label="curriculo" size="1.2em" href="#works" />
           </q-btn-group>
 
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#works">Works</a>
+              </li>
+            </ul>
+          </nav>
+
         </div>
       </q-header>
 
