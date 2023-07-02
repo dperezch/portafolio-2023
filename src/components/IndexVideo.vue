@@ -15,7 +15,7 @@ const skeleton = ref(true)
 onMounted(()=>{
 
     setTimeout(()=>{
-        fetch('video-marketing.mp4')
+        fetch('frontend.mp4')
         .then(res=> {
         if (res.ok) { console.log("HTTP request successful") }
         else { console.log("HTTP request unsuccessful") }
@@ -36,6 +36,6 @@ onMounted(()=>{
     height: 650px;
 }
 video {
-    max-width: 1000px;
+    max-width: 1200px;
 }
 </style>
