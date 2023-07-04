@@ -1,8 +1,8 @@
 <template>
     <!-- DESKTOP -->
     <div class="gt-md q-my-xl" id="contact">
-        <div class="text-h1 montserrat-font text-center q-pr-xl q-my-xl">
-            <p class="q-mr-xl">PORTAFOLIO</p>
+        <div class="text-h1 montserrat-font text-center q-pt-xl q-my-xl">
+            <p class="q-my-xl">PORTAFOLIO</p>
         </div>
         <div class="flex row wrap justify-evenly">
           <DesktopCard />  

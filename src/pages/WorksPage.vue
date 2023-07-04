@@ -3,8 +3,8 @@
     <!-- DESKTOP -->
     <div class="gt-md" id="works">
         
-        <div class="montserrat-font text-h1 text-center q-ma-xl">
-        EXPERIENCIA
+        <div class="montserrat-font text-h1 text-center q-ma-xl q-pt-xl">
+            EXPERIENCIA
         </div>
         <div class="container-cv gt-md animate__animated animate__fadeIn animate__slow q-ma-xl q-py-xl">
             <q-card class="work" :onmouseenter="mostrar" :onmouseleave="ocultar">  <!-- :onmouseenter="entrar" :onmouseleave="salir" -->
@@ -27,7 +27,7 @@
                 <div class="montserrat-font column palabras">
                     <div class="col">
                         <marquee behavior="scroll" direction="right" scrollamount="7">
-                            <a href="#skills" class="habilidades" :class="$q.dark.isActive? 'text-secondary' : ' text-cyan-7'">
+                            <a href="https://drive.google.com/file/d/1MdCRYrLfPQzZpY_pVs8X3qeoggvDSnMQ/view?usp=sharing" target="_blank" class="habilidades" :class="$q.dark.isActive? 'text-secondary' : ' text-cyan-7'">
                                 Licenciatura en ARTES
                                 <q-badge color="cyan" align="top" rounded>Click me</q-badge>
                             </a>
@@ -36,13 +36,13 @@
                             <p class="habilidades" :class="$q.dark.isActive? 'text-white' : ' text-black'" >Habilidades blandas</p>
                         </marquee>
                         <marquee behavior="scroll" direction="right" scrollamount="5">
-                            <a href="#skills" class="habilidades" :class="$q.dark.isActive? 'text-cyan-7' : ' text-secondary'">
+                            <a href="https://drive.google.com/file/d/1M0zQr0Ps0T9Qf2SHmCM4dHOo0IAJXXlL/view?usp=sharing" target="_blank" class="habilidades" :class="$q.dark.isActive? 'text-cyan-7' : ' text-secondary'">
                                 <q-badge color="orange" align="top" rounded>Click me</q-badge>
                                 SCRUM
                             </a>
                         </marquee>
                         <marquee behavior="scroll" direction="left" scrollamount="5">
-                            <a href="#skills" class="habilidades" :class="$q.dark.isActive? 'text-secondary' : ' text-cyan-7'">
+                            <a href="https://drive.google.com/file/d/1Hku5lQ0U_86_OTO1OkIZi_MhyH9rDem1/view?usp=sharing" target="_blank" class="habilidades" :class="$q.dark.isActive? 'text-secondary' : ' text-cyan-7'">
                                 Trabajo en EQUIPO
                                 <q-badge color="cyan" align="top" rounded>Click me</q-badge>
                             </a>
@@ -56,7 +56,7 @@
                             <p class="habilidades" :class="$q.dark.isActive? 'text-white' : ' text-black'">Liderazgo de EQUIPOS</p>
                         </marquee>
                         <marquee class="col" behavior="scroll" direction="down" scrollamount="6" style="height: 100%;">
-                            <a href="#skills" class="habilidades" :class="$q.dark.isActive? 'text-cyan-7' : ' text-secondary'">
+                            <a href="https://www.credly.com/badges/7130d6c7-45c2-4f69-8c85-fb75177438c2/public_url" target="_blank" class="habilidades" :class="$q.dark.isActive? 'text-cyan-7' : ' text-secondary'">
                                 AWS Cloud
                                 <q-badge color="orange" align="top" rounded>Click me</q-badge>
                             </a>
@@ -67,7 +67,7 @@
                             <p class="habilidades" :class="$q.dark.isActive? 'text-white' : ' text-black'">INGLES medio</p>
                         </marquee>
                         <marquee behavior="scroll" direction="right" scrollamount="6">
-                            <a href="#skills" class="habilidades" :class="$q.dark.isActive? 'text-cyan-7' : ' text-secondary'">
+                            <a href="https://drive.google.com/file/d/1jokTo-tdEp41nA-3GyCsGEpK-AOU640y/view?usp=sharing" target="_blank" class="habilidades" :class="$q.dark.isActive? 'text-cyan-7' : ' text-secondary'">
                                 <q-badge color="orange" align="top" rounded>Click me</q-badge>
                                 Comunicación efectiva a CLIENTES
                             </a>
