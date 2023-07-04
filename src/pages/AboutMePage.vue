@@ -66,7 +66,7 @@ const $q = useQuasar()
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    background: url('perfil.jpg');
+    background: url('/perfil.jpg');
     background-position: center;
     background-size: cover;
 }
