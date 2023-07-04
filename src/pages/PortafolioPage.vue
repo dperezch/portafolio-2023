@@ -1,6 +1,6 @@
 <template>
     <!-- DESKTOP -->
-    <div class="gt-md q-my-xl">
+    <div class="gt-md q-my-xl" id="contact">
         <div class="text-h1 montserrat-font text-center q-pr-xl q-my-xl">
             <p class="q-mr-xl">PORTAFOLIO</p>
         </div>

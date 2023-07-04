@@ -1,6 +1,6 @@
 <template>
   <!-- DESKTOP -->
-  <div class="flex flex-center column video gt-md animate__animated animate__fadeIn animate__slower">
+  <div class="flex flex-center column gt-md animate__animated animate__fadeIn animate__slower">
 
     <IndexVideo />  
 
@@ -49,11 +49,6 @@ const herovideo2 = ref('hero2.mp4')
 
 .montserrat-font {
   font-weight: 600;
-}
-
-.video {
-  width: 100vw;
-  border-radius: 0px 0px 0px 0px;
 }
 
 .david {

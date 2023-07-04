@@ -3,7 +3,7 @@
     <!-- DESKTOP -->
 
     <div class="gt-md column q-my-xl">
-        <div class="text-h1 montserrat-font q-my-xl q-pa-xl" :class="$q.dark.isActive? 'bg-white-brand text-black': 'bg-black text-white-brand'" id="skills">
+        <div class="text-h1 montserrat-font q-my-xl q-pa-xl" :class="$q.dark.isActive? 'bg-secondary text-black': 'bg-black text-white-brand'" id="skills">
             SKILLS
         </div>
         <div class="flex row flex-center" >
@@ -12,7 +12,7 @@
                 <div class="montserrat-font text-h2 col-2 vertical flex flex-center" :class="$q.dark.isActive? 'bg-white-brand text-black': 'bg-black text-white-brand'">
                     FRONTEND SKILLS
                 </div>
-                <div class="montserrat-font text-h3 col-10 q-pa-md box-yellow" :class="$q.dark.isActive? 'bg-cyan-7': 'bg-yellow'">
+                <div class="montserrat-font text-h3 col-10 q-pa-md box-yellow" :class="$q.dark.isActive? 'bg-cyan-7': 'bg-secondary'">
                     <p class="q-ml-md" v-for="(text, index) in skillStore.frontEnd" :key="index"> {{ text }} </p>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <div class="montserrat-font text-h2 q-pa-md" :class="$q.dark.isActive? 'bg-white-brand text-black': 'bg-black text-white-brand'">
                     BACKEND BASICS SKILLS
                 </div>
-                <div class="montserrat-font text-h3 q-pa-md box-yellow" :class="$q.dark.isActive? 'bg-cyan-7': 'bg-yellow'">
+                <div class="montserrat-font text-h3 q-pa-md box-yellow" :class="$q.dark.isActive? 'bg-cyan-7': 'bg-secondary'">
                     <p v-for="(text, index) in skillStore.backEnd" :key="index" > {{ text }} </p>
                 </div>
             </div>
@@ -30,13 +30,13 @@
                 <div class="montserrat-font text-h2 q-pa-md" :class="$q.dark.isActive? 'bg-white-brand text-black': 'bg-black text-white-brand'">
                     CLOUD COMPUTING SKILLS
                 </div>
-                <div class="montserrat-font text-h3 q-pa-md box-yellow" :class="$q.dark.isActive? 'bg-cyan-7': 'bg-yellow'">
+                <div class="montserrat-font text-h3 q-pa-md box-yellow" :class="$q.dark.isActive? 'bg-cyan-7': 'bg-secondary'">
                     <p v-for="(text,index) in skillStore.cloudSkills" :key="index"> {{ text }} </p>
                 </div>
             </div>
             <!-- DEVTOOLS -->
             <div class="skill-box flex row">
-                <div class="montserrat-font text-h3 q-pa-md box-yellow" :class="$q.dark.isActive? 'bg-cyan-7': 'bg-yellow'">
+                <div class="montserrat-font text-h3 q-pa-md box-yellow" :class="$q.dark.isActive? 'bg-cyan-7': 'bg-secondary'">
                     <p v-for="(text,index) in skillStore.developerTools" :key="index"> {{ text }} </p>
                 </div>
                 <div class="montserrat-font text-h2 vertical-2 q-pa-md" :class="$q.dark.isActive? 'bg-white-brand text-black': 'bg-black text-white-brand'">
@@ -48,14 +48,14 @@
                 <div class="montserrat-font text-h2 q-pa-md" :class="$q.dark.isActive? 'bg-white-brand text-black': 'bg-black text-white-brand'">
                     DESIGN TOOLS
                 </div>
-                <div class="montserrat-font text-h3 q-pa-md box-yellow" :class="$q.dark.isActive? 'bg-cyan-7': 'bg-yellow'">
+                <div class="montserrat-font text-h3 q-pa-md box-yellow" :class="$q.dark.isActive? 'bg-cyan-7': 'bg-secondary'">
                     <p v-for="(text, index) in skillStore.design" :key="index"> {{ text }} </p>
                 </div>
             </div>
         </div>
 
-        <div class="text-h2 montserrat-font q-my-md q-pa-md text-center" :class="$q.dark.isActive? 'bg-white-brand text-black': 'bg-black text-white-brand'">
-            BADGES
+        <div class="q-pa-md text-right" :class="$q.dark.isActive? 'bg-secondary text-black': 'bg-black text-white-brand'">
+            <div class="montserrat-font text-h2 badges">BADGES</div>
         </div>
 
         <div class="flex justify-evenly">
@@ -195,4 +195,7 @@ p
 
 .vertical-2
     writing-mode: vertical-lr
+
+.badges
+    margin-right: 4em
 </style>

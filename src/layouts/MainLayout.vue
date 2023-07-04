@@ -25,27 +25,15 @@
           class="flex flex-center"
         >
         
-          <q-btn-group flat class="">
+          <!-- <q-btn-group flat class="">
             <q-btn flat :color="$q.dark.isActive? 'white': 'black'" label="HOME" size="1.2em" href="#"/>
             <q-btn flat :color="$q.dark.isActive? 'white': 'black'" label="habilidades" size="1.2em" href="#skills"/>
-            <q-btn flat :color="$q.dark.isActive? 'white': 'black'" label="portafolio" size="1.2em"/>
+            <q-btn flat :color="$q.dark.isActive? 'white': 'black'" label="portafolio" size="1.2em" href="#contact"/>
             <q-btn  href="#about"  flat :color="$q.dark.isActive? 'white': 'black'" label="acerca de mi" size="1.2em" />
             <q-btn  flat :color="$q.dark.isActive? 'white': 'black'" label="curriculo" size="1.2em" href="#works" />
-          </q-btn-group>
+          </q-btn-group> -->
 
-          <nav>
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#skills">Skills</a>
-              </li>
-              <li>
-                <a href="#works">Works</a>
-              </li>
-            </ul>
-          </nav>
+          <Navbar />
 
         </div>
       </q-header>
@@ -86,24 +74,6 @@
     <!-- CONTENEDOR PRINCIPAL -->
     <div class="column text-center">
       
-      <!-- VISTA NAVBAR - FIJA -->
-      <!-- <div class="col-4">
-        <div class="col-md col-12">
-          <h2 class="major-font gt-md">David Pérez</h2>
-          <h4 class="major-font lt-lg">David Pérez</h4>
-          <q-tabs key="tabs" v-model="tab" no-caps class="tabsMenu gt-md"  :class="$q.dark.isActive? 'bg-dark-page' : 'bg-white'">
-            <q-tab name="home" label="Home" @click="goHome" />
-            <q-tab name="aboutme" label="Acerca de mi" @click="goAbout" />
-            <q-tab name="contacto" label="Portafolio" @click="goContact" />
-            <q-tab name="skills" label="Habilidades" @click="goSkills" />
-            <q-tab name="works" label="Currículo" @click="goWorks" />
-
-          </q-tabs>
-
-        </div>
-      </div> -->
-      
-
       <!-- VISTAS CONTENIDO -->
       <!-- MOBILE -->
       <div class="lt-lg col-8 justify-center q-mt-xl">
@@ -126,7 +96,6 @@
 <script setup>
 import { ref } from 'vue'
 import Menu from '../components/Menu.vue'
-import About from '../components/About.vue'
 import { useRouter } from 'vue-router';
 import { useQuasar } from 'quasar'
 import IndexPage from 'src/pages/IndexPage.vue';
@@ -134,6 +103,7 @@ import AboutMePage from 'src/pages/AboutMePage.vue';
 import PortafolioPage from 'src/pages/PortafolioPage.vue';
 import SkillsPage from 'src/pages/SkillsPage.vue';
 import WorksPage from 'src/pages/WorksPage.vue';
+import Navbar from 'src/components/Navbar.vue';
 
 //const route = useRoute()
 const router = useRouter()
@@ -152,44 +122,11 @@ const info = ()=>{
 
 /* VISTAS */
 
-const tab = ref('home')
-const tabmenu = ref('home')
 const leftDrawerOpen = ref(false)
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
 
-const goAbout = () => {
-  /* setTimeout(() => {
-    router.push('/about')
-  }, 700) */
-}
-
-const goHome = () => {
-  location.href="#"
-  /* setTimeout(() => {
-    router.push('/')
-  }, 700) */
-}
-
-const goSkills = () => {
-  /* setTimeout(() => {
-    router.push('/skills')
-  }, 700) */
-}
-
-const goContact = () => {
-  /* setTimeout(() => {
-    router.push('/contact')
-  }, 700) */
-}
-
-const goWorks = () => {
-  location.href="#works"
-  /* setTimeout(() => {
-    router.push('/works')
-  }, 700) */
-}
 
 </script>
 
@@ -198,7 +135,5 @@ const goWorks = () => {
 .tabsMenu {
   font-family: 'Montserrat', sans-serif;
 }
-
-
 
 </style>
